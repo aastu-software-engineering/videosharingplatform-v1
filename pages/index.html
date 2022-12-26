@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vidshare.com</title>
+    <style>
+        table, tr, th, td{
+            border: 2px solid brown;
+            width: 300px,700px, 300px;
+            /* border-collapse: collapse; to take of the double line*/
+        }
+        .left{
+            width: 200px;
+        }
+        .right{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table style="width:100%">
+        <!--the logo , the search button and the profile picture-->
+        <tr style="height: 100px;">
+            <th class = "left"><h3>LOGO</h3></th>
+            <th colspan="3">
+                <form>
+                    <input type="text" placeholder="Search here" name="search">
+                    <button type="submit"></button>
+                </form>
+            </th>
+            <th class = "right"><img src="/assets/images/download.png" alt="profile picture"></th>
+            
+        </tr>
+        <!--recommendation, video and shorts display-->
+        <tr style="height: 200px;">
+            <td class = "left">--recommendation channels</td>
+            <td>
+                <iframe width="300px" height=auto src="https://www.youtube-nocookie.com/embed/n9aL0otZalc" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>vid display</td>
+            <td>vid display</td>
+            <td class = "right" rowspan="3">shorts</td>
+            
+        </tr>
+        <tr style="height: 200px;">
+            <td class = "left" rowspan="2">menu contents</td>
+            <td>vid display</td>
+            <td>vid display</td>
+            <td>
+                <iframe width="300" height=auto src="https://www.youtube-nocookie.com/embed/znqUwx0b0HI" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            
+        </tr>
+        <tr style="height: 200px;">
+            <td>vid display</td>
+            <td>vid display</td>
+            <td>vid display</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
